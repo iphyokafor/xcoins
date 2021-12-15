@@ -52,7 +52,7 @@
 
 ## Tests
 
-- Run test for user authentication
+- Run tests
   > run the command below
   ```shell
   $ npm run test
