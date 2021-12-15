@@ -74,4 +74,6 @@
 
  6. Optimize the use of es6 syntax like const, object destructuring.
 
- 7. Write integration tests using mochai and chai.
+ 7. Check for edge cases that will alter the processes of an endpoint and  handle them appropriately. For instance, to create a simulator requires the profile id, I had to write a check to  ensure that the profile id is being passed and that it also exists in the profile table. Also checked for a scenario of not creating a simulator that exist in the database to avoid duplicates before proceeding to create a new simulator. 
+
+ 8. Write integration tests using mochai and chai.
