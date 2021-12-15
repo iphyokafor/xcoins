@@ -34,7 +34,7 @@
 - Start your node server
   > run the command below
   ```shell
-  $ npm run dev start
+  $ npm run dev
   ```
 - Use `http://localhost:3030` as base url for endpoints
 
