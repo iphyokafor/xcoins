@@ -60,7 +60,7 @@
 
 ## Thought Process
 
-# For a production ready application, I thought of improving the state of the application with the following steps
+> For a production ready application, I thought of improving the state of the application with the following steps
 
 - 1. Remove all irrelevant logs.
 
