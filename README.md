@@ -72,4 +72,6 @@
 
 - 5. Add eslint file to make the code look cleaner.
 
-- 6. Write integration tests using mochai and chai.
+- 6. Optimize the use of es6 syntax like const, object destructuring.
+
+- 7. Write integration tests using mochai and chai.
