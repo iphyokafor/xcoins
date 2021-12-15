@@ -62,16 +62,16 @@
 
 > For a production ready application, I thought of improving the state of the application with the following steps
 
-- 1. Remove all irrelevant logs.
+ 1. Remove all irrelevant logs.
 
-- 2. Add try catch blocks to the rightful controllers and methods, returning a certain error response and success response.
+ 2. Add try catch blocks to the rightful controllers and methods, returning a certain error response and success response.
 
-- 3. Standardize the response output format.
+ 3. Standardize the response output format.
 
-- 4. Add validation to the input using the mongoose default validation and the node package validator.
+ 4. Add validation to the input using the mongoose default validation and the node package validator.
 
-- 5. Add eslint file to make the code look cleaner.
+ 5. Add eslint file to make the code look cleaner.
 
-- 6. Optimize the use of es6 syntax like const, object destructuring.
+ 6. Optimize the use of es6 syntax like const, object destructuring.
 
-- 7. Write integration tests using mochai and chai.
+ 7. Write integration tests using mochai and chai.
