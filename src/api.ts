@@ -24,3 +24,5 @@ app.use(simulatorRouter);
 app.listen(PORT, () =>
   console.log(`✅  Ready on port http://localhost:${PORT}`)
 );
+
+export default app;

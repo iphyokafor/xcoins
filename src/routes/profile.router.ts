@@ -1,6 +1,5 @@
 import express from "express";
 import { Profile } from "../models/Profile";
-import { profileValidation } from "../validation/profile.validation";
 
 export var router = express.Router();
 
@@ -17,8 +16,6 @@ router.get("/api/profile", async (req, res) => {
 });
 
 router.post("/api/profile", async (req, res) => {
-  const { error } = profileValidation(req.body);
-  if (error) return res.status(400).send(error.details[0].message);
   const { email, name, nickname } = req.body;
 
   try {
@@ -27,7 +24,7 @@ router.post("/api/profile", async (req, res) => {
     });
 
     if (profile) {
-      return res.json({ status: 400, message: "Profile already exists" });
+      return res.json({ status: 409, message: "Profile already exists" });
     } else {
       profile = await Profile.create({ name, email, nickname });
     }

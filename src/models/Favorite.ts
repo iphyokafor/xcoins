@@ -5,10 +5,22 @@ const { Schema } = mongoose;
 const schema = new Schema(
   {
     profile_id: { type: mongoose.Schema.Types.ObjectId, ref: "Profile" },
-    name: String,
-    favorite1: String,
-    favorite2: String,
-    favorite3: String,
+    name: {
+      type: String,
+      trim: true,
+    },
+    favorite1: {
+      type: String,
+      trim: true,
+    },
+    favorite2: {
+      type: String,
+      trim: true,
+    },
+    favorite3: {
+      type: String,
+      trim: true,
+    },
   },
   {
     timestamps: true,
